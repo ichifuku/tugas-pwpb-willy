@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Pendaftaran</title>
+  <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  fieldset {
+    width: 600px;
+    border: 3px solid #4a90e2;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+
+  legend {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18pt;
+    background-color: #4a90e2;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+  }
+
+  table {
+    width: 100%;
+    border-spacing: 10px;
+  }
+
+  td {
+    padding: 4px;
+    vertical-align: top;
+  }
+
+  input[type="text"],
+  select {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="radio"] {
+    margin-right: 6px;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #4a90e2;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-shadow: inset 0px 2px 2px rgba(0,0,0,0.1);
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    content: "\2714";
+    color: white;
+    background-color: #357ABD;
+    text-align: center;
+    line-height: 20px;
+    text-shadow: 0px 1px 1px #357ABD;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #357ABD;
+  }
+
+  .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .nilai-wrapper input {
+    width: 30%;
+    margin-right: 5px;
+  }
+</style>
+</head>
+<body>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Universitas Patilasan Ikip</legend>
+      <table>
+        <tr>
+          <td><label for="nama_lengkap">Nama Lengkap</label></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="nama_lengkap" name="nama_lengkap" required placeholder="Masukkan nama lengkap"></td>
+        </tr>
+
+        <tr>
+          <td><label for="asal_sekolah">Asal Sekolah</label></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="asal_sekolah" name="asal_sekolah" required placeholder="Masukkan asal sekolah"></td>
+        </tr>
+
+        <tr>
+          <td>Jenis Kelamin</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="laki" name="gender" value="Laki-laki" required>
+            <label for="laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="gender" value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="agama">Agama</label></td>
+        </tr>
+        <tr>
+          <td>
+            <select id="agama" name="agama" required>
+              <option value="">--Pilih Agama--</option>
+              <option value="Islam">Islam</option>
+              <option value="Kristen">Kristen</option>
+              <option value="Katolik">Katolik</option>
+              <option value="Hindu">Hindu</option>
+              <option value="Budha">Budha</option>
+              <option value="Konghucu">Konghucu</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Nilai</label></td>
+        </tr>
+        <tr>
+          <td class="nilai-wrapper">
+            <input type="text" name="nilai_mtk" placeholder="Matematika" required>
+            <input type="text" name="nilai_bindo" placeholder="Bahasa Indonesia" required>
+            <input type="text" name="nilai_bing" placeholder="Bahasa Inggris" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="fakultas_pilihan">Fakultas Pilihan</label></td>
+        </tr>
+        <tr>
+          <td>
+            <select id="fakultas_pilihan" name="fakultas_pilihan" required>
+              <option value="">--Pilih Fakultas--</option>
+              <option value="teknik">Teknik</option>
+              <option value="hukum">Hukum</option>
+              <option value="kedokteran">Kedokteran</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="cb1" name="cb1" value="setuju" required>
+              <label for="cb1">Saya menyetujui persyaratan yang berlaku</label>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="text-align: center;">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+</body>
+</html>
