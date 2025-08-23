@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Lorem Ipsum</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+    }
+
+    h2 {
+      text-align: center;
+      text-decoration: underline;
+      text-shadow: 3px 4px hotpink;
+      margin: 0;
+      padding: 20px 0;
+    }
+
+    .kotak {
+      width: 100%;
+      max-width: 700px;
+      height: 150px;
+      padding: 15px;
+      overflow-y: auto;
+      border-radius: 0;
+      color: aliceblue;
+      margin: 0 auto;
+    }
+
+    .tengah {
+      background-color: skyblue;
+      text-align: center;
+    }
+
+    .kiri-kanan-container {
+      display: flex;
+      max-width: 700px;
+      height: 150px;
+      margin: 0 auto;
+    }
+
+    .kiri, .kanan {
+      flex: 1;
+      height: 100%;
+      padding: 15px;
+      overflow-y: auto;
+      border-radius: 0;
+      color: aliceblue;
+    }
+
+    .kiri {
+      background-color: turquoise;
+      text-align: left;
+    }
+
+    .kanan {
+      background-color: aquamarine;
+      text-align: right;
+    }
+
+    .bawah {
+      background-color: orchid;
+      color: aquamarine;
+      text-align: justify;
+      max-width: 700px;
+      height: 150px;
+      padding: 15px;
+      overflow-y: auto;
+      border-radius: 0;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Lorem Ipsum</h2>
+
+  <div class="kotak tengah">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum 
+    justo sed ipsum dapibus, non laoreet massa suscipit. Integer pulvinar 
+    tincidunt ligula, sed hendrerit nisi ultrices eu. Suspendisse nec lorem 
+    euismod, rhoncus lorem vitae, tempor ligula.
+  </div>
+
+  <div class="kiri-kanan-container">
+    <div class="kiri">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis 
+      est a ante tristique, vel suscipit metus congue. Nullam vulputate pretium 
+      nisl. Vivamus in pharetra nisl. Pellentesque habitant morbi tristique 
+      senectus et netus.
+    </div>
+    <div class="kanan">
+      Vivamus fringilla, purus eget dignissim imperdiet, metus felis faucibus 
+      risus, vitae lobortis elit nisi ac sapien. Nullam luctus, ipsum nec 
+      pulvinar fermentum, justo risus dignissim nunc, sed tincidunt ligula 
+      nulla sit amet arcu.
+    </div>
+  </div>
+
+  <div class="bawah">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit 
+    amet nisi finibus, luctus risus sit amet, sagittis augue. Mauris maximus 
+    tellus magna, sed pretium tortor vehicula id. In non augue velit. Vivamus 
+    congue efficitur tellus, at sagittis purus convallis sed. Pellentesque 
+    habitant morbi tristique senectus et netus et malesuada fames ac turpis 
+    egestas.
+  </div>
+
+</body>
+</html>
