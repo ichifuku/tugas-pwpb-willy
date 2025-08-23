@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Usagi</title>
+    <style>
+        body {
+            margin: 0;
+            background: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        video {
+            width: 350px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <img src="images/tuff.jpeg" alt="Usagi">
+            <img src="images/tuff.jpeg" alt="Usagi">
+            <img src="images/tuff.jpeg" alt="Usagi">
+        </div>
+
+        <video controls>
+            <source src="videos/una.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+        </video>
+
+        <div class="row">
+            <img src="images/tuff.jpeg" alt="Usagi">
+            <img src="images/tuff.jpeg" alt="Usagi">
+            <img src="images/tuff.jpeg" alt="Usagi">
+        </div>
+    </div>
+</body>
+</html>
